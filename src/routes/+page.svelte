@@ -1,4 +1,5 @@
 <script lang="ts">
+  import resinImage from '$lib/assets/Fragile_Resin.png';
   import {
     Calculator,
     type Item,
@@ -48,6 +49,31 @@
     transmutationOpt
   });
 </script>
+
+<svelte:head>
+  <meta property="og:type" content="website" />
+  <meta
+    property="og:url"
+    content="https://resin-calc-svelte.pages.dev/"
+  />
+  <meta
+    property="og:title"
+    content="레진 파밍 계산기"
+  />
+  <meta
+    property="og:description"
+    content="레진 파밍 계산기 by SvelteKit"
+  />
+  <meta
+    property="og:image"
+    content={resinImage}
+  />
+  <meta
+    property="og:site_name"
+    content="레진 파밍 계산기"
+  />
+  <meta property="og:locale" content="en_KO" />
+</svelte:head>
 
 <main>
   <h1>레진 파밍 계산기</h1>
