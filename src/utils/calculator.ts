@@ -260,7 +260,7 @@ export class Calculator {
     } else {
       const count = this.runWeaponDungeon();
       const zeroStartCount =
-        this.runSkillDungeon(true);
+        this.runWeaponDungeon(true);
 
       return (
         Number(
